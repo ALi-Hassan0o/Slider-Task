@@ -1,0 +1,75 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.slider-cointainer {
+  width: 100%;
+ max-width: 650px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+margin:50px;
+}
+.slider-cointainer .slid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;;
+}
+.slider-cointainer .slid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn {
+  position: absolute;
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  color: brown;
+  cursor: pointer;
+  top: calc(50% - 21px);
+}
+
+.btn-right {
+  right: 7px;
+}
+.btn-left {
+  left: 7px;
+}
+
+.circle button{
+  border-radius: 50%;
+  width: 20px;
+height: 20px;
+  background-color: rgba(249, 247, 247, 0.218);
+  cursor: pointer;
+}
+.circle button.active{
+  background-color: brown;
+}
+.circle button:focus{
+  background-color: brown;
+}
+@media (max-width:600px) {
+  .btn-left , .btn-right{
+    padding: 5px;
+  }
+  .circle button{
+    width: 15px;
+    height: 15px;
+  }
+  .slider-cointainer{
+    max-width: 100%;
+   
+  }
+}
